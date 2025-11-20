@@ -1,0 +1,155 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding-top: 65px; /* Espaço para a navbar fixa */
+    background-color: #f4f4f4; /* Fundo Suave */
+    color: #2c3e50;
+    line-height: 1.5;
+}
+
+/* BARRA DE NAVEGAÇÃO PROFISSIONAL */
+nav {
+    background-color: #ffffff; 
+    border-bottom: 2px solid #e74c3c; /* Linha de ação para urgência */
+    height: 65px;
+    padding: 0 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    z-index: 1000;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #2c3e50;
+}
+
+nav .nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-links a {
+    color: #34495e; 
+    text-decoration: none;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav .nav-links a:hover {
+    color: #e74c3c;
+}
+
+/* Layout Principal */
+main {
+    padding: 20px 0;
+}
+
+/* Cartão Individual do Produto */
+.product-card {
+    background-color: white;
+    margin: 25px auto;
+    max-width: 450px; 
+    border-radius: 12px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1); 
+    padding: 25px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.details h2 {
+    color: #2c3e50;
+    margin-top: 0;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+/* Ênfase no Preço (Urgência) */
+.price-old {
+    color: #95a5a6;
+    text-decoration: line-through;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+.price-new {
+    color: #e74c3c; /* Vermelho Forte para Urgência e Ação */
+    font-size: 3em; /* Enorme */
+    font-weight: 900;
+    margin: 5px 0 15px 0;
+}
+
+.shipping {
+    color: #27ae60; /* Verde Confiança */
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 25px;
+}
+
+/* O BOTÃO CTA - FOCO TOTAL NA CONVERSÃO */
+.cta-button {
+    display: block;
+    width: 100%;
+    padding: 22px 0;
+    background-color: #f39c12; /* Laranja/Amarelo Forte: Impulso e Atenção */
+    color: #2c3e50;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.5em;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(243, 156, 18, 0.5); /* Sombra para o fazer saltar */
+    text-transform: uppercase;
+}
+
+.cta-button:hover {
+    background-color: #e67e22;
+}
+
+.stock-info {
+    color: #e74c3c;
+    font-weight: bold;
+    margin-top: 15px;
+    font-size: 1em;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 0.8em;
+    color: #7f8c8d;
+    border-top: 1px solid #bdc3c7;
+    margin-top: 40px;
+}
+
+footer a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+/* Ajustes Mobile */
+@media (max-width: 600px) {
+    .price-new {
+        font-size: 2.5em;
+    }
+}
